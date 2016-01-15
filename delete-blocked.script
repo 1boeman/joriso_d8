@@ -1,0 +1,6 @@
+#!/usr/bin/env drush
+
+$users = db_query("SELECT * FROM {users_field_data} WHERE (status = 0)");
+foreach ($users as $user) {
+  exec("drush user-cancel $user->name -y");
+}
