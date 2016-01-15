@@ -1,0 +1,15 @@
+name: JorisO
+description: JorisO Theme
+type: theme
+core: 8.x
+base theme: classy
+libraries:
+  - joriso/global-styling
+regions:
+  header: Header
+  featured: Featured
+  content: content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer
+
